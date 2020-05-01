@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".example.ui.MainActivity">
+
+    <!-- LinearLayout for holding three Android-Me images -->
+    <LinearLayout
+        android:id="@+id/android_me_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <GridView
+            android:id="@+id/simpleGridView"
+            android:layout_width="fill_parent"
+            android:layout_height="324dp"
+            android:footerDividersEnabled="false"
+            android:numColumns="3"
+            android:nestedScrollingEnabled="true"
+            android:background="@drawable/gridselector">
+        </GridView>
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="168dp"
+            android:layout_height="94dp"
+            android:layout_gravity="center"
+            android:src="@drawable/head11" />
+
+        <ImageView
+            android:id="@+id/body"
+            android:layout_width="168dp"
+            android:layout_height="94dp"
+            android:layout_gravity="center"
+            android:src="@drawable/body1" />
+
+
+        <ImageView
+            android:id="@id/foot"
+            android:layout_width="168dp"
+            android:layout_height="94dp"
+            android:layout_gravity="center"
+            android:src="@drawable/legs1" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Random Styling"
+            android:onClick="random"/>
+    </LinearLayout>
+
+</ScrollView>
